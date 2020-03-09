@@ -1,0 +1,21 @@
+[Custom]
+RPC_PORT                      = ":8892"
+STATUS_PUSH                   = "http://tob.rpc/tob_internal_account"
+DES3                          = "http://online.toolkit-api.rpc"
+
+[Log]
+LogFile                       = "/opt/log/data_grabliepin/grab_liepin.log"
+Level                         = "debug"
+
+[Redis]
+IsCluster                     = false
+Address                       = "192.168.8.94:6379"
+Password                      = ""
+DialTimeout                   = 3
+ReadTimeout                   = 20
+WriteTimeout                  = 20
+Prefix                        = "Grab_production_"
+
+[FastDfs]
+Tracker                       = ["192.168.8.59:22122", "192.168.8.201:22122"]
+MaxConn                       = 100

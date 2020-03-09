@@ -1,0 +1,31 @@
+[Custom]
+RPC_PORT                      = ":8892"
+STATUS_PUSH                   = "http://dev.tob.rpc/tob_internal_account"
+DES3                          = "http://192.168.2.70:20007"
+
+[MySQL]
+Username                      = "devuser"
+Password                      = "devuser"
+Address                       = "192.168.1.201"
+Port                          = "3306"
+DB                            = "grab_liepin"
+KeepAlive                     = 300
+MaxOpenConns                  = 200
+MaxIdleConns                  = 10
+
+[Log]
+LogFile                       = "/opt/log/data_grabliepin/grab_liepin.log"
+Level                         = "debug"
+
+[Redis]
+IsCluster                     = false
+Address                       = "192.168.1.108:6379"
+Password                      = "a2f2*^*a4fe"
+DialTimeout                   = 3
+ReadTimeout                   = 20
+WriteTimeout                  = 20
+Prefix                        = "Grab_development_"
+
+[FastDfs]
+Tracker                       = ["192.168.1.203:22122"]
+MaxConn                       = 100

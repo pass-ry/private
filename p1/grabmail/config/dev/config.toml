@@ -1,0 +1,30 @@
+[Custom]
+RPC                           = ":8888"
+DES3                          = "http://192.168.2.70:20007"
+
+[MySQL]
+Username                      = "devuser"
+Password                      = "devuser"
+Address                       = "192.168.1.201"
+Port                          = "3306"
+DB                            = "grab_receive_mail"
+KeepAlive                     = 300
+MaxOpenConns                  = 200
+MaxIdleConns                  = 10
+
+[Log]
+LogFile                       = "/opt/log/grabmail.log"
+Level                         = "debug"
+
+[Redis]
+IsCluster                     = false
+Address                       = "192.168.1.108:6379"
+Password                      = "a2f2*^*a4fe"
+DialTimeout                   = 3
+ReadTimeout                   = 20
+WriteTimeout                  = 20
+Prefix                        = "Grab_development_"
+
+[Dfs]
+Master                     = ["192.168.1.108:9335"]
+Volume                     = ["192.168.1.108:8082"]

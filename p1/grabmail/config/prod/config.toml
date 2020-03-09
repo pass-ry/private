@@ -1,0 +1,19 @@
+[Custom]
+RPC                           = ":8888"
+DES3                          = "http://online.toolkit-api.rpc"
+
+[Log]
+LogFile                       = "/opt/log/grabmail.log"
+Level                         = "debug"
+
+[Redis]
+IsCluster                     = false
+Address                       = "192.168.8.94:6379"
+DialTimeout                   = 3
+ReadTimeout                   = 20
+WriteTimeout                  = 20
+Prefix                        = "Grab_production_"
+
+[Dfs]
+Master                     = ["192.168.8.66:9335"]
+Volume                     = ["192.168.8.96:8281","192.168.8.96:8381","192.168.8.97:8281","192.168.8.99:8381"]

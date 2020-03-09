@@ -1,0 +1,30 @@
+[Custom]
+RPC                           = ":8888"
+DES3                          = "http://testing2.toolkit-api.rpc"
+
+[MySQL]
+Username                      = "ts"
+Password                      = "sdfe232t9ddde3d"
+Address                       = "10.9.10.6"
+Port                          = "3306"
+DB                            = "grab_receive_mail"
+KeepAlive                     = 300
+MaxOpenConns                  = 200
+MaxIdleConns                  = 10
+
+[Log]
+LogFile                       = "/opt/log/grabmail.log"
+Level                         = "debug"
+
+[Redis]
+IsCluster                     = false
+Address                       = "10.9.10.17:6389"
+Password                      = ""
+DialTimeout                   = 3
+ReadTimeout                   = 20
+WriteTimeout                  = 20
+Prefix                        = "Grab_testing2_"
+
+[Dfs]
+Master                     = ["10.9.10.4:9333"]
+Volume                     = ["10.9.10.4:8083","10.9.10.4:8084","10.9.10.4:8085","10.9.10.4:8086","10.9.10.4:8087"]

@@ -1,0 +1,31 @@
+[Custom]
+RPC_PORT                      = ":8890"
+STATUS_PUSH                   = "http://testing2.tob.rpc/tob_internal_account"
+DES3                          = "http://testing2.toolkit-api.rpc"
+
+[MySQL]
+Username                      = "ts"
+Password                      = "sdfe232t9ddde3d"
+Address                       = "10.9.10.6"
+Port                          = "3306"
+DB                            = "grab_receive_mail"
+KeepAlive                     = 300
+MaxOpenConns                  = 200
+MaxIdleConns                  = 10
+
+[Log]
+LogFile                       = "/opt/log/grab_zhilian.log"
+Level                         = "debug"
+
+[Redis]
+IsCluster                     = false
+Address                       = "10.9.10.17:6389"
+Password                      = ""
+DialTimeout                   = 3
+ReadTimeout                   = 20
+WriteTimeout                  = 20
+Prefix                        = "Grab_testing2_"
+
+[FastDfs]
+Tracker                       = ["10.9.10.2:22122"]
+MaxConn                       = 100
